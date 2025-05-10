@@ -1,0 +1,6 @@
+Projektin ideana oli tehdä jonkinlainen interaktiivinen ohjelma Nokia näyttöä ja nappeja käyttäen.
+Päädyin tekemään alun Balatro nimisen pelin kopiolle.
+Balatro on roguelike korttipeli, jossa pelataan pokerikäsiä pisteiden saamiseen.
+Pisteet lisääntyy jokereilla, pokerikäsien päivittämisellä ja korttien ehostamisella.
+Suunnitelmana oli saada joitain perustoimintoja kuten eri käsien tunnistus,
+korttien pois heitto ja käsien pisteytys toteutettua.

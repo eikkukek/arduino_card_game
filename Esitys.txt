@@ -1,0 +1,30 @@
+Aihe: Balatro -kopion alusta Arduino Unolla
+Ryhmä: Einari Mäkiranta
+
+Kytkennät:
+	- Kolme kosketusnappia
+	- Nokia 5110 LCD -näyttö
+
+Koodaus:
+
+Käytin Nokia näytön ohjaamiseen valmiita AdaFruitin kirjastoja.
+Rakensin bittikartat kaikille korttien osille itse ja piirän ne
+käyttämällä Adafruit_PCD8544::drawPixel funktiota.
+Tunnistan kädet käyttämällä histogrammia valittujen korttien
+arvoista ja väreistä.
+Käytän Lerp (linear interpolation) funktiota korttien sulavaan liikkumiseen.
+En tee dynaamisia muistinvarauksia (new/malloc) ohjelman ajon aikana.
+
+Haasteita:
+
+Arduino Unolla on hyvin rajoitettu muisti (2Kb ajoajalle), jonka takia
+käytän bittikartoissa PROGMEM -macroa (joka siirtää ne flash-muistiin) ja
+käytän paljon 8- ja 16-bittisiä lukuja struktuureissa, indekseissä ja enumeraattoreissa 32-bittisten lukujen sijaan.
+Jaoin korttien visuaaliset elementit eri bittikarttoihin (värit, arvot ja taustat) ja
+ne piiretään loopissa erikseen per kortti.
+
+
+Parannuksia:
+
+Projektia voisi viedä eteenpäin selkeämmän pelilogiikan kehityksellä.
+Projektissa on suurimmaksi osin vain raakoja rakennuspalikoita kunnollisen pelin rakentamiseen.
