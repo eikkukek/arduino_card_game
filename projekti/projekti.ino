@@ -819,7 +819,7 @@ Hand GetCurrentHand() {
       }
     }
     if (hasStraight) {
-      if (i == 7) { // 10 to Ace straight
+      if (i == 8) { // 10 to Ace straight
         isRoyal = true;
       }
       break;
